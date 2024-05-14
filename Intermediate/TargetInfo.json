@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "FACADE_ES",
+			"Path": "D:\\Galaga\\FACADE_ES\\Source\\FACADE_ES.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "FACADE_ESEditor",
+			"Path": "D:\\Galaga\\FACADE_ES\\Source\\FACADE_ESEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

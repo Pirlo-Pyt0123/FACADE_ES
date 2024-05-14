@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\FACADE_ES.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{EEB9020C-F6D7-4E7F-8B68-073FECD3F13A}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\FACADE_ES.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\FACADE_ESEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{F569A3AD-E5AD-4D49-B73A-7AE9D2E9DF9A}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\FACADE_ES">
+      <UniqueIdentifier>{FC80F690-7A21-42EE-ADF1-8B5BC3EB205E}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\FACADE_ES\ENEMY_FACADE.cpp">
+      <Filter>Source\FACADE_ES</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FACADE_ES\ENEMY_FACADE.h">
+      <Filter>Source\FACADE_ES</Filter>
+    </ClInclude>
+    <None Include="..\..\Source\FACADE_ES\FACADE_ES.Build.cs">
+      <Filter>Source\FACADE_ES</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\FACADE_ES\FACADE_ES.cpp">
+      <Filter>Source\FACADE_ES</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FACADE_ES\FACADE_ES.h">
+      <Filter>Source\FACADE_ES</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\FACADE_ES\FACADE_ESGameMode.cpp">
+      <Filter>Source\FACADE_ES</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FACADE_ES\FACADE_ESGameMode.h">
+      <Filter>Source\FACADE_ES</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\FACADE_ES\FACADE_ESPawn.cpp">
+      <Filter>Source\FACADE_ES</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FACADE_ES\FACADE_ESPawn.h">
+      <Filter>Source\FACADE_ES</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\FACADE_ES\FACADE_ESProjectile.cpp">
+      <Filter>Source\FACADE_ES</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FACADE_ES\FACADE_ESProjectile.h">
+      <Filter>Source\FACADE_ES</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\FACADE_ES\NaveEnemiga.cpp">
+      <Filter>Source\FACADE_ES</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FACADE_ES\NaveEnemiga.h">
+      <Filter>Source\FACADE_ES</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\FACADE_ES\NaveEnemiga_Basic.cpp">
+      <Filter>Source\FACADE_ES</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FACADE_ES\NaveEnemiga_Basic.h">
+      <Filter>Source\FACADE_ES</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\FACADE_ES\NaveEnemiga_Nodriza.cpp">
+      <Filter>Source\FACADE_ES</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FACADE_ES\NaveEnemiga_Nodriza.h">
+      <Filter>Source\FACADE_ES</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

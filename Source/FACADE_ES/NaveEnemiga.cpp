@@ -25,19 +25,14 @@ void ANaveEnemiga::Tick(float DeltaTime)
 
 }
 
-void ANaveEnemiga::MoveHorizontal()
+void ANaveEnemiga::RealizarOperacion()
 {
+	CreateEnemy();
+	MovimientoEstrategico();
+	DisparoEstrategico();
+	Habilidad();
+
 }
 
-void ANaveEnemiga::MoveVertical()
-{
-}
 
-void ANaveEnemiga::Destruirse()
-{
-}
-
-void ANaveEnemiga::EventosOK(const TArray<FString>& _Events)
-{
-}
 

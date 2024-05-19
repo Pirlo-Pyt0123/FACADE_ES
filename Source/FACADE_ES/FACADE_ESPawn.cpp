@@ -17,6 +17,10 @@ const FName AFACADE_ESPawn::MoveForwardBinding("MoveForward");
 const FName AFACADE_ESPawn::MoveRightBinding("MoveRight");
 const FName AFACADE_ESPawn::FireForwardBinding("FireForward");
 const FName AFACADE_ESPawn::FireRightBinding("FireRight");
+const FName AFACADE_ESPawn::FireUpBinding("FireUp");
+const FName AFACADE_ESPawn::MoveUpBinding("MoveUp");
+const FName AFACADE_ESPawn::MoveDownBinding("MoveDown");
+
 
 AFACADE_ESPawn::AFACADE_ESPawn()
 {	
@@ -61,41 +65,41 @@ void AFACADE_ESPawn::SetupPlayerInputComponent(class UInputComponent* PlayerInpu
 	PlayerInputComponent->BindAxis(MoveRightBinding);
 	PlayerInputComponent->BindAxis(FireForwardBinding);
 	PlayerInputComponent->BindAxis(FireRightBinding);
+	PlayerInputComponent->BindAxis(FireUpBinding);
+	PlayerInputComponent->BindAxis(MoveUpBinding);
+	PlayerInputComponent->BindAxis(MoveDownBinding);
 }
 
 void AFACADE_ESPawn::Tick(float DeltaSeconds)
 {
-	// Find movement direction
 	const float ForwardValue = GetInputAxisValue(MoveForwardBinding);
 	const float RightValue = GetInputAxisValue(MoveRightBinding);
+	const float UpValue = GetInputAxisValue(MoveUpBinding);
 
-	// Clamp max size so that (X=1, Y=1) doesn't cause faster movement in diagonal directions
-	const FVector MoveDirection = FVector(ForwardValue, RightValue, 0.f).GetClampedToMaxSize(1.0f);
+	const float DownValue = GetInputAxisValue(MoveDownBinding); // Obtener el valor del nuevo eje de movimiento
 
-	// Calculate  movement
+	const FVector MoveDirection = FVector(ForwardValue, RightValue, UpValue + DownValue).GetClampedToMaxSize(1.0f); // Ajustar el vector de movimiento
 	const FVector Movement = MoveDirection * MoveSpeed * DeltaSeconds;
 
-	// If non-zero size, move this actor
 	if (Movement.SizeSquared() > 0.0f)
 	{
-		const FRotator NewRotation = Movement.Rotation();
 		FHitResult Hit(1.f);
-		RootComponent->MoveComponent(Movement, NewRotation, true, &Hit);
-		
+		RootComponent->MoveComponent(Movement, RootComponent->GetComponentRotation(), true, &Hit);
+
 		if (Hit.IsValidBlockingHit())
 		{
 			const FVector Normal2D = Hit.Normal.GetSafeNormal2D();
 			const FVector Deflection = FVector::VectorPlaneProject(Movement, Normal2D) * (1.f - Hit.Time);
-			RootComponent->MoveComponent(Deflection, NewRotation, true);
+			RootComponent->MoveComponent(Deflection, RootComponent->GetComponentRotation(), true);
 		}
 	}
-	
-	// Create fire direction vector
+
 	const float FireForwardValue = GetInputAxisValue(FireForwardBinding);
 	const float FireRightValue = GetInputAxisValue(FireRightBinding);
-	const FVector FireDirection = FVector(FireForwardValue, FireRightValue, 0.f);
+	const float FireUpValue = GetInputAxisValue(FireUpBinding);
+	//const float FireDownValue = GetInputAxisValue(FireDownBinding); // Obtener el valor del nuevo eje de disparo
+	const FVector FireDirection = FVector(FireForwardValue, FireRightValue, FireUpValue + 0); // Ajustar el vector de dirección de disparo
 
-	// Try and fire a shot
 	FireShot(FireDirection);
 }
 

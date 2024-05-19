@@ -23,26 +23,26 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
-protected:
+public:
 
+	UPROPERTY(VisibleAnywhere, Category = "Facade Enemy")
 	TArray<class ANaveEnemiga*> Enemigos;
 
 	UPROPERTY(VisibleAnywhere, Category = "Facade Enemy")
 	TArray<FString> Events;
 
-protected:
 	UPROPERTY(VisibleAnywhere, Category = "Facade Ship")
 	class ANaveEnemiga_Basic* Basicas;
+
 	UPROPERTY(VisibleAnywhere, Category = "Facade Ship")
 	class ANaveEnemiga_Nodriza* Master;
 
-public:
-	void CreateEnemy();
-	void MoveEnemies();
-	void CheckCollisions();
-	void RemoveDeadEnemies();
 
-private:
+
+
+public:
 
 	void RealizarEvents(TArray<class ANaveEnemiga*> _Enemigos, TArray<FString> _Events);
+
+	void GestionNaves();
 };

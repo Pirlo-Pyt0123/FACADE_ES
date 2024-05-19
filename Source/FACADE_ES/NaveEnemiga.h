@@ -23,22 +23,23 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+	
+
+	// Métodos virtuales puros para crear, mover, disparar y habilidades de la nave enemiga
+	
+
+public:
+	void RealizarOperacion();
+
+
+
 
 public:
 
-	void MoveHorizontal();
-	void MoveVertical();
-	void Destruirse();
-
-	void EventosOK(const TArray<FString>& _Events);
-
+	virtual void CreateEnemy() PURE_VIRTUAL(ANaveEnemiga::CreateEnemy;);
 	virtual void MovimientoEstrategico() PURE_VIRTUAL(ANaveEnemiga::MovimientoEstrategico;);
 	virtual void DisparoEstrategico() PURE_VIRTUAL(ANaveEnemiga::DisparoEstrategico;);
 	virtual void Habilidad() PURE_VIRTUAL(ANaveEnemiga::Habilidad;);
 
-
-private:
-
-	void ValidarEventos(const FString& _Events);
 
 };

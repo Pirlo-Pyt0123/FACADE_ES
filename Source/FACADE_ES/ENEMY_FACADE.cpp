@@ -11,7 +11,7 @@ AENEMY_FACADE::AENEMY_FACADE()
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
-
+	
 }
 
 // Called when the game starts or when spawned
@@ -28,28 +28,37 @@ void AENEMY_FACADE::Tick(float DeltaTime)
 
 }
 
-void AENEMY_FACADE::CreateEnemy()
+void AENEMY_FACADE::GestionNaves()
 {
+	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Gestionando Naves"));
+	for (int i = 0; i < Enemigos.Num(); i++)
+	{
+		if (Events[i] == "Basic")
+		{
+			Basicas = Cast<ANaveEnemiga_Basic>(Enemigos[i]);
+			Basicas->CreateEnemy();
+			Basicas->MovimientoEstrategico();
+			Basicas->DisparoEstrategico();
+			Basicas->Habilidad();
 
-}
+			//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Basica"));
+		}
+		else if (Events[i] == "Master")
+		{
+			Master = Cast<ANaveEnemiga_Nodriza>(Enemigos[i]);
+			Master->CreateEnemy();
+			Master->MovimientoEstrategico();
+			Master->DisparoEstrategico();
+			Master->Habilidad();
 
-void AENEMY_FACADE::MoveEnemies()
-{
-
-}
-
-void AENEMY_FACADE::CheckCollisions()
-{
-
-}
-
-void AENEMY_FACADE::RemoveDeadEnemies()
-{
-
+			//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Nodriza"));
+		}
+	}
+	
 }
 
 void AENEMY_FACADE::RealizarEvents(TArray<class ANaveEnemiga*> _Enemigos, TArray<FString> _Events)
 {
-
+	
 }
 

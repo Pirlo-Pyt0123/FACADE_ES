@@ -58,7 +58,10 @@ public:
 	static const FName MoveRightBinding;
 	static const FName FireForwardBinding;
 	static const FName FireRightBinding;
-
+	static const FName FireUpBinding;
+	//static const FName FireDownBinding;
+	static const FName MoveUpBinding;
+	static const FName MoveDownBinding;
 private:
 
 	/* Flag to control firing  */

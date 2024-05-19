@@ -17,6 +17,7 @@ void EmptyLinkFunctionForGeneratedCodeFACADE_ESGameMode() {}
 	FACADE_ES_API UClass* Z_Construct_UClass_AFACADE_ESGameMode();
 	ENGINE_API UClass* Z_Construct_UClass_AGameModeBase();
 	UPackage* Z_Construct_UPackage__Script_FACADE_ES();
+	FACADE_ES_API UClass* Z_Construct_UClass_AENEMY_FACADE_NoRegister();
 // End Cross Module References
 	void AFACADE_ESGameMode::StaticRegisterNativesAFACADE_ESGameMode()
 	{
@@ -31,6 +32,11 @@ void EmptyLinkFunctionForGeneratedCodeFACADE_ESGameMode() {}
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Facade_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Facade;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
 	};
@@ -46,6 +52,16 @@ void EmptyLinkFunctionForGeneratedCodeFACADE_ESGameMode() {}
 		{ "ShowCategories", "Input|MouseInput Input|TouchInput" },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AFACADE_ESGameMode_Statics::NewProp_Facade_MetaData[] = {
+		{ "Category", "Facade Enemy" },
+		{ "ModuleRelativePath", "FACADE_ESGameMode.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AFACADE_ESGameMode_Statics::NewProp_Facade = { "Facade", nullptr, (EPropertyFlags)0x0020080000020001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AFACADE_ESGameMode, Facade), Z_Construct_UClass_AENEMY_FACADE_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AFACADE_ESGameMode_Statics::NewProp_Facade_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AFACADE_ESGameMode_Statics::NewProp_Facade_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AFACADE_ESGameMode_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AFACADE_ESGameMode_Statics::NewProp_Facade,
+	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AFACADE_ESGameMode_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AFACADE_ESGameMode>::IsAbstract,
 	};
@@ -55,11 +71,11 @@ void EmptyLinkFunctionForGeneratedCodeFACADE_ESGameMode() {}
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
 		nullptr,
-		nullptr,
+		Z_Construct_UClass_AFACADE_ESGameMode_Statics::PropPointers,
 		nullptr,
 		UE_ARRAY_COUNT(DependentSingletons),
 		0,
-		0,
+		UE_ARRAY_COUNT(Z_Construct_UClass_AFACADE_ESGameMode_Statics::PropPointers),
 		0,
 		0x008802ACu,
 		METADATA_PARAMS(Z_Construct_UClass_AFACADE_ESGameMode_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_AFACADE_ESGameMode_Statics::Class_MetaDataParams))
@@ -73,7 +89,7 @@ void EmptyLinkFunctionForGeneratedCodeFACADE_ESGameMode() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFACADE_ESGameMode, 2745441156);
+	IMPLEMENT_CLASS(AFACADE_ESGameMode, 851657467);
 	template<> FACADE_ES_API UClass* StaticClass<AFACADE_ESGameMode>()
 	{
 		return AFACADE_ESGameMode::StaticClass();

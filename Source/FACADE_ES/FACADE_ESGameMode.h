@@ -13,6 +13,21 @@ class AFACADE_ESGameMode : public AGameModeBase
 
 public:
 	AFACADE_ESGameMode();
+
+protected:
+	virtual void BeginPlay() override;
+
+	
+
+
+public:
+	virtual void Tick(float DeltaTime) override;
+
+
+protected:
+	UPROPERTY(VisibleAnywhere, Category = "Facade Enemy")
+	class AENEMY_FACADE* Facade;
+
 };
 
 

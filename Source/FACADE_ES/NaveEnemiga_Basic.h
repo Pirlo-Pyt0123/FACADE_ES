@@ -30,4 +30,5 @@ public:
 	void MovimientoEstrategico() override;
 	void DisparoEstrategico() override;
 	void Habilidad() override;
+	void CreateEnemy() override;
 };

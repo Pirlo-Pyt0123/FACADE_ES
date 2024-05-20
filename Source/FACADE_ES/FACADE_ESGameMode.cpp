@@ -14,10 +14,18 @@ void AFACADE_ESGameMode::BeginPlay()
 {
 	Super::BeginPlay();
 
-	Facade = GetWorld()->SpawnActor<AENEMY_FACADE>(AENEMY_FACADE::StaticClass());
-	Facade->NivelFacil();
-	//Facade->NivelMedio();
-	//Facade->NivelDificil();
+    Facade = GetWorld()->SpawnActor<AENEMY_FACADE>(AENEMY_FACADE::StaticClass());
+    if (Facade)
+    {
+        GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, TEXT("Facade spawn successful"));
+        Facade->NivelFacil();
+        Facade->NivelMedio();
+        //Facade->NivelDificil();
+    }
+    else
+    {
+        GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Facade spawn failed"));
+    }
 
 }
 

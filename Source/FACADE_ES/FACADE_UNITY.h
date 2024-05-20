@@ -28,7 +28,11 @@ public:
 protected:
 
 	void CrearVida()const; //nacimiento Xd
-	void CrearMovimiento(); //move
+	void ModifyMove(); //move
+	void Cmurio(); //muerte
+
+	
+
 	
 
 public:

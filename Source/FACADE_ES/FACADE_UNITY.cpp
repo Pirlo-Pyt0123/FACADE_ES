@@ -8,11 +8,15 @@
 #include "FACADE_ESPawn.h"
 
 
+
 // Sets default values
 AFACADE_UNITY::AFACADE_UNITY()
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
+
+
+	
 
 }
 
@@ -59,10 +63,17 @@ void AFACADE_UNITY::CrearVida()const
 	
 }
 
-void AFACADE_UNITY::CrearMovimiento()
+void AFACADE_UNITY::ModifyMove()
 {
+	//modificar movimiento
 	
+}
+
+void AFACADE_UNITY::Cmurio()
+{
+	//muerte
 	
+
 }
 
 
@@ -83,7 +94,7 @@ void AFACADE_UNITY::CrearOrden(const FString& _Orden)
 	}
 	else if (_Orden.Equals("Potencia"))
 	{
-		CrearMovimiento();
+		ModifyMove();
 		
 	}
 	

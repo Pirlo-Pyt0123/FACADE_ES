@@ -35,7 +35,6 @@ void AENEMY_FACADE::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 	
-
 }
 
 
@@ -68,9 +67,8 @@ void AENEMY_FACADE::NivelFacil()
 void AENEMY_FACADE::NivelMedio()
 {
 	Ordenado.Empty();
-	Ordenado.Add("vida");
-	Ordenado.Add("vida");
-	Ordenado.Add("potencia");
+	Ordenado.Add(TEXT("Vida"));
+	Ordenado.Add(TEXT("Potencia"));
 	TArray<AFACADE_LEVELC*> NivelActualizado;
 	for (AFACADE_UNITY* Unity : Nivel)
 	{
@@ -78,7 +76,20 @@ void AENEMY_FACADE::NivelMedio()
 		if (LevelC)
 		{
 			NivelActualizado.Add(LevelC);
+			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, TEXT("Added a valid AFACADE_LEVELC to NivelActualizado"));
 		}
+		else
+		{
+			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Casting to AFACADE_LEVELC failed"));
+		}
+	}
+	if (NivelActualizado.Num() > 0)
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, TEXT("NivelActualizado is not empty"));
+	}
+	else
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("NivelActualizado is empty"));
 	}
 	NivelesGen(NivelActualizado, Ordenado);
 }

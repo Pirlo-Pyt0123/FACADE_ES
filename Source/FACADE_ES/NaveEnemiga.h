@@ -27,7 +27,11 @@ public:
 	virtual void Tick(float DeltaTime) override;
 
 
-
+protected:
+	
+	/*virtual void Mover() = 0;
+	virtual void Disparar() = 0;
+	virtual void Morir() = 0;*/
 	
 	
 

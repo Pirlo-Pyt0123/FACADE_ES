@@ -2,4 +2,6 @@ D:\Galaga\FACADE_ES\Intermediate\Build\Win64\UE4Editor\Development\FACADE_ES\Def
 D:\Galaga\FACADE_ES\Source\FACADE_ES\NaveEnemiga_Basic.h
 D:\Galaga\FACADE_ES\Source\FACADE_ES\NaveEnemiga.h
 D:\Galaga\FACADE_ES\Intermediate\Build\Win64\UE4Editor\Inc\FACADE_ES\NaveEnemiga.generated.h
+D:\Galaga\FACADE_ES\Source\FACADE_ES\MOVE_EASY.h
+D:\Galaga\FACADE_ES\Intermediate\Build\Win64\UE4Editor\Inc\FACADE_ES\MOVE_EASY.generated.h
 D:\Galaga\FACADE_ES\Intermediate\Build\Win64\UE4Editor\Inc\FACADE_ES\NaveEnemiga_Basic.generated.h

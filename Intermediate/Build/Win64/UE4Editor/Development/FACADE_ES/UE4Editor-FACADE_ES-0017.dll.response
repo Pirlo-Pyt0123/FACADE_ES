@@ -34,6 +34,7 @@
 /NODEFAULTLIB:"LIBCPD"
 /FUNCTIONPADMIN
 "D:\Galaga\FACADE_ES\Intermediate\Build\Win64\FACADE_ESEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"D:\Galaga\FACADE_ES\Intermediate\Build\Win64\UE4Editor\Development\FACADE_ES\ALIEN.cpp.obj"
 "D:\Galaga\FACADE_ES\Intermediate\Build\Win64\UE4Editor\Development\FACADE_ES\ENEMY_FACADE.cpp.obj"
 "D:\Galaga\FACADE_ES\Intermediate\Build\Win64\UE4Editor\Development\FACADE_ES\FACADE_ES.cpp.obj"
 "D:\Galaga\FACADE_ES\Intermediate\Build\Win64\UE4Editor\Development\FACADE_ES\FACADE_ESGameMode.cpp.obj"
@@ -44,6 +45,7 @@
 "D:\Galaga\FACADE_ES\Intermediate\Build\Win64\UE4Editor\Development\FACADE_ES\NaveEnemiga.cpp.obj"
 "D:\Galaga\FACADE_ES\Intermediate\Build\Win64\UE4Editor\Development\FACADE_ES\NaveEnemiga_Basic.cpp.obj"
 "D:\Galaga\FACADE_ES\Intermediate\Build\Win64\UE4Editor\Development\FACADE_ES\NaveEnemiga_Nodriza.cpp.obj"
+"D:\Galaga\FACADE_ES\Intermediate\Build\Win64\UE4Editor\Development\FACADE_ES\ALIEN.gen.cpp.obj"
 "D:\Galaga\FACADE_ES\Intermediate\Build\Win64\UE4Editor\Development\FACADE_ES\ENEMY_FACADE.gen.cpp.obj"
 "D:\Galaga\FACADE_ES\Intermediate\Build\Win64\UE4Editor\Development\FACADE_ES\FACADE_ES.init.gen.cpp.obj"
 "D:\Galaga\FACADE_ES\Intermediate\Build\Win64\UE4Editor\Development\FACADE_ES\FACADE_ESGameMode.gen.cpp.obj"

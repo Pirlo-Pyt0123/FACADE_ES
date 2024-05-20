@@ -17,9 +17,8 @@ void EmptyLinkFunctionForGeneratedCodeENEMY_FACADE() {}
 	FACADE_ES_API UClass* Z_Construct_UClass_AENEMY_FACADE();
 	ENGINE_API UClass* Z_Construct_UClass_AActor();
 	UPackage* Z_Construct_UPackage__Script_FACADE_ES();
-	FACADE_ES_API UClass* Z_Construct_UClass_ANaveEnemiga_NoRegister();
-	FACADE_ES_API UClass* Z_Construct_UClass_ANaveEnemiga_Basic_NoRegister();
-	FACADE_ES_API UClass* Z_Construct_UClass_ANaveEnemiga_Nodriza_NoRegister();
+	FACADE_ES_API UClass* Z_Construct_UClass_AFACADE_LEVELC_NoRegister();
+	FACADE_ES_API UClass* Z_Construct_UClass_AFACADE_UNITY_NoRegister();
 // End Cross Module References
 	void AENEMY_FACADE::StaticRegisterNativesAENEMY_FACADE()
 	{
@@ -34,24 +33,20 @@ void EmptyLinkFunctionForGeneratedCodeENEMY_FACADE() {}
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
-		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Enemigos_Inner;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Enemigos_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_NivelActual_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_Enemigos;
-		static const UE4CodeGen_Private::FStrPropertyParams NewProp_Events_Inner;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_NivelActual;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Nivel_Inner;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Events_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Nivel_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_Events;
+		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_Nivel;
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_Ordenado_Inner;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Basicas_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Ordenado_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Basicas;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Master_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Master;
+		static const UE4CodeGen_Private::FArrayPropertyParams NewProp_Ordenado;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -66,43 +61,32 @@ void EmptyLinkFunctionForGeneratedCodeENEMY_FACADE() {}
 		{ "ModuleRelativePath", "ENEMY_FACADE.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AENEMY_FACADE_Statics::NewProp_Enemigos_Inner = { "Enemigos", nullptr, (EPropertyFlags)0x0000000000020000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_ANaveEnemiga_NoRegister, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AENEMY_FACADE_Statics::NewProp_Enemigos_MetaData[] = {
-		{ "Category", "Facade Enemy" },
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AENEMY_FACADE_Statics::NewProp_NivelActual_MetaData[] = {
 		{ "ModuleRelativePath", "ENEMY_FACADE.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AENEMY_FACADE_Statics::NewProp_Enemigos = { "Enemigos", nullptr, (EPropertyFlags)0x0010000000020001, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AENEMY_FACADE, Enemigos), EArrayPropertyFlags::None, METADATA_PARAMS(Z_Construct_UClass_AENEMY_FACADE_Statics::NewProp_Enemigos_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AENEMY_FACADE_Statics::NewProp_Enemigos_MetaData)) };
-	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UClass_AENEMY_FACADE_Statics::NewProp_Events_Inner = { "Events", nullptr, (EPropertyFlags)0x0000000000020000, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AENEMY_FACADE_Statics::NewProp_NivelActual = { "NivelActual", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AENEMY_FACADE, NivelActual), Z_Construct_UClass_AFACADE_LEVELC_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AENEMY_FACADE_Statics::NewProp_NivelActual_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AENEMY_FACADE_Statics::NewProp_NivelActual_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AENEMY_FACADE_Statics::NewProp_Nivel_Inner = { "Nivel", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, Z_Construct_UClass_AFACADE_UNITY_NoRegister, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AENEMY_FACADE_Statics::NewProp_Events_MetaData[] = {
-		{ "Category", "Facade Enemy" },
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AENEMY_FACADE_Statics::NewProp_Nivel_MetaData[] = {
 		{ "ModuleRelativePath", "ENEMY_FACADE.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AENEMY_FACADE_Statics::NewProp_Events = { "Events", nullptr, (EPropertyFlags)0x0010000000020001, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AENEMY_FACADE, Events), EArrayPropertyFlags::None, METADATA_PARAMS(Z_Construct_UClass_AENEMY_FACADE_Statics::NewProp_Events_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AENEMY_FACADE_Statics::NewProp_Events_MetaData)) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AENEMY_FACADE_Statics::NewProp_Nivel = { "Nivel", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AENEMY_FACADE, Nivel), EArrayPropertyFlags::None, METADATA_PARAMS(Z_Construct_UClass_AENEMY_FACADE_Statics::NewProp_Nivel_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AENEMY_FACADE_Statics::NewProp_Nivel_MetaData)) };
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UClass_AENEMY_FACADE_Statics::NewProp_Ordenado_Inner = { "Ordenado", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AENEMY_FACADE_Statics::NewProp_Basicas_MetaData[] = {
-		{ "Category", "Facade Ship" },
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AENEMY_FACADE_Statics::NewProp_Ordenado_MetaData[] = {
 		{ "ModuleRelativePath", "ENEMY_FACADE.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AENEMY_FACADE_Statics::NewProp_Basicas = { "Basicas", nullptr, (EPropertyFlags)0x0010000000020001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AENEMY_FACADE, Basicas), Z_Construct_UClass_ANaveEnemiga_Basic_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AENEMY_FACADE_Statics::NewProp_Basicas_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AENEMY_FACADE_Statics::NewProp_Basicas_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AENEMY_FACADE_Statics::NewProp_Master_MetaData[] = {
-		{ "Category", "Facade Ship" },
-		{ "ModuleRelativePath", "ENEMY_FACADE.h" },
-	};
-#endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AENEMY_FACADE_Statics::NewProp_Master = { "Master", nullptr, (EPropertyFlags)0x0010000000020001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AENEMY_FACADE, Master), Z_Construct_UClass_ANaveEnemiga_Nodriza_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AENEMY_FACADE_Statics::NewProp_Master_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AENEMY_FACADE_Statics::NewProp_Master_MetaData)) };
+	const UE4CodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AENEMY_FACADE_Statics::NewProp_Ordenado = { "Ordenado", nullptr, (EPropertyFlags)0x0010000000000000, UE4CodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AENEMY_FACADE, Ordenado), EArrayPropertyFlags::None, METADATA_PARAMS(Z_Construct_UClass_AENEMY_FACADE_Statics::NewProp_Ordenado_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AENEMY_FACADE_Statics::NewProp_Ordenado_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AENEMY_FACADE_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AENEMY_FACADE_Statics::NewProp_Enemigos_Inner,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AENEMY_FACADE_Statics::NewProp_Enemigos,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AENEMY_FACADE_Statics::NewProp_Events_Inner,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AENEMY_FACADE_Statics::NewProp_Events,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AENEMY_FACADE_Statics::NewProp_Basicas,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AENEMY_FACADE_Statics::NewProp_Master,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AENEMY_FACADE_Statics::NewProp_NivelActual,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AENEMY_FACADE_Statics::NewProp_Nivel_Inner,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AENEMY_FACADE_Statics::NewProp_Nivel,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AENEMY_FACADE_Statics::NewProp_Ordenado_Inner,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AENEMY_FACADE_Statics::NewProp_Ordenado,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AENEMY_FACADE_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AENEMY_FACADE>::IsAbstract,
@@ -131,7 +115,7 @@ void EmptyLinkFunctionForGeneratedCodeENEMY_FACADE() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AENEMY_FACADE, 951713844);
+	IMPLEMENT_CLASS(AENEMY_FACADE, 2473997874);
 	template<> FACADE_ES_API UClass* StaticClass<AENEMY_FACADE>()
 	{
 		return AENEMY_FACADE::StaticClass();

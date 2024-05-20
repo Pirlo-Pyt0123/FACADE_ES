@@ -23,11 +23,7 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
-public:
-	void CreateEnemy() override;
-	void MovimientoEstrategico() override;
-	void DisparoEstrategico() override;
-	void Habilidad() override;
+
 	
 	
 };

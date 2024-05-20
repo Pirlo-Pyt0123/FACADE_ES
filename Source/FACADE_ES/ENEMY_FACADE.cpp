@@ -2,9 +2,9 @@
 
 
 #include "ENEMY_FACADE.h"
-#include "NaveEnemiga.h"
-#include "NaveEnemiga_Basic.h"
-#include "NaveEnemiga_Nodriza.h"
+#include "FACADE_LEVELC.h"
+#include "FACADE_UNITY.h"
+
 
 // Sets default values
 AENEMY_FACADE::AENEMY_FACADE()
@@ -12,12 +12,21 @@ AENEMY_FACADE::AENEMY_FACADE()
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 	
+	Nivel = TArray<AFACADE_UNITY*>();
+	Ordenado = TArray<FString>();
+
+   
 }
 
 // Called when the game starts or when spawned
 void AENEMY_FACADE::BeginPlay()
 {
 	Super::BeginPlay();
+
+	NivelActual = GetWorld()->SpawnActor<AFACADE_LEVELC>(AFACADE_LEVELC::StaticClass());
+
+	Nivel.Add(NivelActual);
+	
 	
 }
 
@@ -25,40 +34,70 @@ void AENEMY_FACADE::BeginPlay()
 void AENEMY_FACADE::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+	
 
 }
 
-void AENEMY_FACADE::GestionNaves()
+
+
+void AENEMY_FACADE::NivelesGen(TArray<class AFACADE_LEVELC*> _Nivel, TArray<FString> _Orden)
 {
-	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Gestionando Naves"));
-	for (int i = 0; i < Enemigos.Num(); i++)
+	for (AFACADE_UNITY* TipoCapsulasNivel : _Nivel)
 	{
-		if (Events[i] == "Basic")
-		{
-			Basicas = Cast<ANaveEnemiga_Basic>(Enemigos[i]);
-			Basicas->CreateEnemy();
-			Basicas->MovimientoEstrategico();
-			Basicas->DisparoEstrategico();
-			Basicas->Habilidad();
+		TipoCapsulasNivel->RecibirOrden(_Orden);
+	}
+}
 
-			//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Basica"));
-		}
-		else if (Events[i] == "Master")
+void AENEMY_FACADE::NivelFacil()
+{
+	Ordenado.Empty();
+	Ordenado.Add("Vida");
+	Ordenado.Add("Potencia");
+	TArray<AFACADE_LEVELC*> NivelActualizado;
+	for (AFACADE_UNITY* Unity : Nivel)
+	{
+		AFACADE_LEVELC* LevelC = Cast<AFACADE_LEVELC>(Unity);
+		if (LevelC)
 		{
-			Master = Cast<ANaveEnemiga_Nodriza>(Enemigos[i]);
-			Master->CreateEnemy();
-			Master->MovimientoEstrategico();
-			Master->DisparoEstrategico();
-			Master->Habilidad();
-
-			//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Nodriza"));
+			NivelActualizado.Add(LevelC);
 		}
 	}
-	
+	NivelesGen(NivelActualizado, Ordenado);
 }
 
-void AENEMY_FACADE::RealizarEvents(TArray<class ANaveEnemiga*> _Enemigos, TArray<FString> _Events)
+void AENEMY_FACADE::NivelMedio()
 {
-	
+	Ordenado.Empty();
+	Ordenado.Add("vida");
+	Ordenado.Add("vida");
+	Ordenado.Add("potencia");
+	TArray<AFACADE_LEVELC*> NivelActualizado;
+	for (AFACADE_UNITY* Unity : Nivel)
+	{
+		AFACADE_LEVELC* LevelC = Cast<AFACADE_LEVELC>(Unity);
+		if (LevelC)
+		{
+			NivelActualizado.Add(LevelC);
+		}
+	}
+	NivelesGen(NivelActualizado, Ordenado);
 }
 
+void AENEMY_FACADE::NivelDificil()
+{
+	Ordenado.Empty();
+	Ordenado.Add("Vida");
+	Ordenado.Add("Vida");
+	Ordenado.Add("Vida");
+	Ordenado.Add("potencia");
+	TArray<AFACADE_LEVELC*> NivelActualizado;
+	for (AFACADE_UNITY* Unity : Nivel)
+	{
+		AFACADE_LEVELC* LevelC = Cast<AFACADE_LEVELC>(Unity);
+		if (LevelC)
+		{
+			NivelActualizado.Add(LevelC);
+		}
+	}
+	NivelesGen(NivelActualizado, Ordenado);
+}

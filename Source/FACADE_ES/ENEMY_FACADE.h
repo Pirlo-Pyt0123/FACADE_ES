@@ -5,7 +5,6 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
 #include "ENEMY_FACADE.generated.h"
-
 UCLASS()
 class FACADE_ES_API AENEMY_FACADE : public AActor
 {
@@ -23,26 +22,28 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
-public:
-
-	UPROPERTY(VisibleAnywhere, Category = "Facade Enemy")
-	TArray<class ANaveEnemiga*> Enemigos;
-
-	UPROPERTY(VisibleAnywhere, Category = "Facade Enemy")
-	TArray<FString> Events;
-
-	UPROPERTY(VisibleAnywhere, Category = "Facade Ship")
-	class ANaveEnemiga_Basic* Basicas;
-
-	UPROPERTY(VisibleAnywhere, Category = "Facade Ship")
-	class ANaveEnemiga_Nodriza* Master;
-
-
 
 
 public:
 
-	void RealizarEvents(TArray<class ANaveEnemiga*> _Enemigos, TArray<FString> _Events);
+	UPROPERTY()
+	class AFACADE_LEVELC* NivelActual;
 
-	void GestionNaves();
+	UPROPERTY()
+	TArray<class AFACADE_UNITY*> Nivel;
+
+
+	UPROPERTY()
+	TArray<FString> Ordenado;
+
+	void NivelesGen(TArray<class AFACADE_LEVELC*> _Nivel, TArray<FString> _Orden);
+
+	void NivelFacil();
+	void NivelMedio();
+	void NivelDificil();
+
+
+
+
+	
 };

@@ -15,8 +15,9 @@ void AFACADE_ESGameMode::BeginPlay()
 	Super::BeginPlay();
 
 	Facade = GetWorld()->SpawnActor<AENEMY_FACADE>(AENEMY_FACADE::StaticClass());
-
-	Facade->GestionNaves();
+	Facade->NivelFacil();
+	//Facade->NivelMedio();
+	//Facade->NivelDificil();
 
 }
 

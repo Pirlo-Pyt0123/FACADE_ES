@@ -15,6 +15,9 @@ public:
 	// Sets default values for this actor's properties
 	ANaveEnemiga();
 
+	UPROPERTY(VisibleAnywhere, Category = "Nave Enemiga")
+	class UStaticMeshComponent* malla;
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -23,23 +26,13 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+
+
+	
 	
 
-	// Métodos virtuales puros para crear, mover, disparar y habilidades de la nave enemiga
-	
-
-public:
-	void RealizarOperacion();
 
 
-
-
-public:
-
-	virtual void CreateEnemy() PURE_VIRTUAL(ANaveEnemiga::CreateEnemy;);
-	virtual void MovimientoEstrategico() PURE_VIRTUAL(ANaveEnemiga::MovimientoEstrategico;);
-	virtual void DisparoEstrategico() PURE_VIRTUAL(ANaveEnemiga::DisparoEstrategico;);
-	virtual void Habilidad() PURE_VIRTUAL(ANaveEnemiga::Habilidad;);
 
 
 };

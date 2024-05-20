@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\FACADE_ES.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{EEB9020C-F6D7-4E7F-8B68-073FECD3F13A}</UniqueIdentifier>
+      <UniqueIdentifier>{9E490C9D-E98A-4F62-9936-CDAE78296A03}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\FACADE_ES.Target.cs">
       <Filter>Source</Filter>
@@ -11,8 +11,11 @@
     <None Include="..\..\Source\FACADE_ESEditor.Target.cs">
       <Filter>Source</Filter>
     </None>
+    <None Include="..\..\.gitattributes" />
+    <None Include="..\..\.gitignore" />
+    <None Include="..\..\Source.rar" />
     <Filter Include="Config">
-      <UniqueIdentifier>{F569A3AD-E5AD-4D49-B73A-7AE9D2E9DF9A}</UniqueIdentifier>
+      <UniqueIdentifier>{8BDC21AA-5A60-420D-9B98-804CE100FD20}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,7 +33,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\FACADE_ES">
-      <UniqueIdentifier>{FC80F690-7A21-42EE-ADF1-8B5BC3EB205E}</UniqueIdentifier>
+      <UniqueIdentifier>{09956ACD-0C5C-410A-A9EC-7D3AA40666DA}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\FACADE_ES\ENEMY_FACADE.cpp">
       <Filter>Source\FACADE_ES</Filter>
@@ -63,6 +66,18 @@
       <Filter>Source\FACADE_ES</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\FACADE_ES\FACADE_ESProjectile.h">
+      <Filter>Source\FACADE_ES</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\FACADE_ES\FACADE_LEVELC.cpp">
+      <Filter>Source\FACADE_ES</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FACADE_ES\FACADE_LEVELC.h">
+      <Filter>Source\FACADE_ES</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\FACADE_ES\FACADE_UNITY.cpp">
+      <Filter>Source\FACADE_ES</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FACADE_ES\FACADE_UNITY.h">
       <Filter>Source\FACADE_ES</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\FACADE_ES\NaveEnemiga.cpp">

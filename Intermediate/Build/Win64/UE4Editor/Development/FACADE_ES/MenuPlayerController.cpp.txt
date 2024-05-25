@@ -1,0 +1,10 @@
+D:\Galaga\FACADE_ES\Intermediate\Build\Win64\UE4Editor\Development\FACADE_ES\Definitions.FACADE_ES.h
+D:\Galaga\FACADE_ES\Source\FACADE_ES\MenuPlayerController.h
+D:\Galaga\FACADE_ES\Intermediate\Build\Win64\UE4Editor\Inc\FACADE_ES\MenuPlayerController.generated.h
+D:\Galaga\FACADE_ES\Source\FACADE_ES\MENU_HUD.h
+D:\juegazo\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/HUD.h
+D:\juegazo\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/HUDHitBox.h
+D:\juegazo\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/DebugTextInfo.h
+D:\juegazo\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\DebugTextInfo.generated.h
+D:\juegazo\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\HUD.generated.h
+D:\Galaga\FACADE_ES\Intermediate\Build\Win64\UE4Editor\Inc\FACADE_ES\MENU_HUD.generated.h

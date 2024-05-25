@@ -40,7 +40,7 @@ AFACADE_ESPawn::AFACADE_ESPawn()
 	CameraBoom->SetupAttachment(RootComponent);
 	CameraBoom->SetUsingAbsoluteRotation(true); // Don't want arm to rotate when ship does
 	CameraBoom->TargetArmLength = 1200.f;
-	CameraBoom->SetRelativeRotation(FRotator(-80.f, 0.f, 0.f));
+	CameraBoom->SetRelativeRotation(FRotator(0.f, 0.f, 0.f));
 	CameraBoom->bDoCollisionTest = false; // Don't want to pull camera in when it collides with level
 
 	// Create a camera...
@@ -48,12 +48,22 @@ AFACADE_ESPawn::AFACADE_ESPawn()
 	CameraComponent->SetupAttachment(CameraBoom, USpringArmComponent::SocketName);
 	CameraComponent->bUsePawnControlRotation = false;	// Camera does not rotate relative to arm
 
+
+
+
+
+
 	// Movement
 	MoveSpeed = 1000.0f;
 	// Weapon
 	GunOffset = FVector(90.f, 0.f, 0.f);
 	FireRate = 0.1f;
 	bCanFire = true;
+
+
+
+
+	Health_Nave_Protagonista = 1000;
 }
 
 void AFACADE_ESPawn::SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent)
@@ -68,10 +78,24 @@ void AFACADE_ESPawn::SetupPlayerInputComponent(class UInputComponent* PlayerInpu
 	PlayerInputComponent->BindAxis(FireUpBinding);
 	PlayerInputComponent->BindAxis(MoveUpBinding);
 	PlayerInputComponent->BindAxis(MoveDownBinding);
+
+
+	FInputActionKeyMapping camara("CamaraFirst", EKeys::P, 0, 0, 0, 0);
+	UPlayerInput::AddEngineDefinedActionMapping(camara);
+	PlayerInputComponent->BindAction("CamaraFirst", EInputEvent::IE_Pressed, this, &AFACADE_ESPawn::CamaraCambio);
+
+
 }
 
 void AFACADE_ESPawn::Tick(float DeltaSeconds)
 {
+	if (Health_Nave_Protagonista <= 0)
+	{
+		Componentes_Colision();
+	}
+
+
+	GEngine->AddOnScreenDebugMessage(-1, 0.f, FColor::Cyan, FString::Printf(TEXT("Vida  : %f"), Health_Nave_Protagonista));
 	const float ForwardValue = GetInputAxisValue(MoveForwardBinding);
 	const float RightValue = GetInputAxisValue(MoveRightBinding);
 	const float UpValue = GetInputAxisValue(MoveUpBinding);
@@ -139,5 +163,45 @@ void AFACADE_ESPawn::FireShot(FVector FireDirection)
 void AFACADE_ESPawn::ShotTimerExpired()
 {
 	bCanFire = true;
+}
+
+void AFACADE_ESPawn::CamaraCambio()
+{
+	typecamara *= -1;
+	if (typecamara == -1) {
+		//camara en primera persona
+		CameraBoom->TargetArmLength = 0.f;
+		CameraBoom->SetRelativeRotation(FRotator(-80.f,0.f, 0.f));
+		CameraComponent->bUsePawnControlRotation = true;
+
+
+
+
+	}
+	else {
+		CameraBoom->TargetArmLength = 1200.f;
+		CameraBoom->SetRelativeRotation(FRotator(-50.f, 0.f, 0.f));
+		CameraBoom->bDoCollisionTest = false;
+		CameraComponent->SetRelativeLocation(FVector(0.f, 0.f, -500.f));
+		CameraBoom->bEnableCameraLag = true;
+
+	}
+}
+
+void AFACADE_ESPawn::Damage(float Danio_)
+{
+	Health_Nave_Protagonista -= Danio_;
+}
+
+void AFACADE_ESPawn::Componentes_Colision()
+{
+	//if (ShipExplosion)
+		//UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), ShipExplosion, GetActorTransform());
+	//Sonido de la explosion
+
+	//if (ExplosionSoundShip != nullptr)
+		//UGameplayStatics::PlaySoundAtLocation(this, ExplosionSoundShip, GetActorLocation());
+
+	this->Destroy();
 }
 

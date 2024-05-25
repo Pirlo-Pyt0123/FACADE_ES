@@ -4,8 +4,8 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
+#include "GameFramework/PlayerInput.h"
 #include "FACADE_ESPawn.generated.h"
-
 UCLASS(Blueprintable)
 class AFACADE_ESPawn : public APawn
 {
@@ -77,5 +77,25 @@ public:
 	FORCEINLINE class UCameraComponent* GetCameraComponent() const { return CameraComponent; }
 	/** Returns CameraBoom subobject **/
 	FORCEINLINE class USpringArmComponent* GetCameraBoom() const { return CameraBoom; }
+
+
+
+	FORCEINLINE void CamaraCambio();
+
+
+	int typecamara = 1;
+
+public:
+
+	float Health_Nave_Protagonista;
+
+public:
+	/** Retorna la salud actual del Pawn */
+	float GetHealth() const { return Health_Nave_Protagonista; }
+
+	void Damage(float Danio_);
+
+	void Componentes_Colision();
+
 };
 

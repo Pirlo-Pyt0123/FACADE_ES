@@ -4,8 +4,8 @@
 
 #include "CoreMinimal.h"
 #include "NaveEnemiga.h"
-#include "MOVE_EASY.h"
 #include "NaveEnemiga_Basic.generated.h"
+
 
 
 UCLASS()
@@ -17,7 +17,7 @@ public:
 	// Sets default values for this actor's properties
 	ANaveEnemiga_Basic();
 
-	class UMOVE_EASY* MoveComponent;
+	//class UMOVE_EASY* MoveComponent;
 
 protected:
 	// Called when the game starts or when spawned
@@ -28,9 +28,17 @@ public:
 	virtual void Tick(float DeltaTime) override;
 	
 
-protected:
-	//virtual void Mover();
-	virtual void Disparar();
-	virtual void Morir();
+
+public:
+
+	virtual void NotifyActorBeginOverlap(AActor* OtherActor) override;
+
+	virtual void Componente_Destruccion() override;
+
+	virtual void Recibir_Danio(float Danio) override;
+
+	
+
+
 
 };

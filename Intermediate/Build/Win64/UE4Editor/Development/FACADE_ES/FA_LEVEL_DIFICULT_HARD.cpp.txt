@@ -1,0 +1,17 @@
+D:\Galaga\FACADE_ES\Intermediate\Build\Win64\UE4Editor\Development\FACADE_ES\Definitions.FACADE_ES.h
+D:\Galaga\FACADE_ES\Source\FACADE_ES\FA_LEVEL_DIFICULT_HARD.h
+D:\Galaga\FACADE_ES\Source\FACADE_ES\FA_LEVEL_DIFICULT.h
+D:\Galaga\FACADE_ES\Source\FACADE_ES\NaveEnemiga.h
+D:\Galaga\FACADE_ES\Intermediate\Build\Win64\UE4Editor\Inc\FACADE_ES\NaveEnemiga.generated.h
+D:\Galaga\FACADE_ES\Source\FACADE_ES\GENERAL_OBSTACLE.h
+D:\Galaga\FACADE_ES\Intermediate\Build\Win64\UE4Editor\Inc\FACADE_ES\GENERAL_OBSTACLE.generated.h
+D:\Galaga\FACADE_ES\Intermediate\Build\Win64\UE4Editor\Inc\FACADE_ES\FA_LEVEL_DIFICULT.generated.h
+D:\Galaga\FACADE_ES\Source\FACADE_ES\P_FM_FABRICA_NAVES.h
+D:\Galaga\FACADE_ES\Source\FACADE_ES\P_FM_FABRICA_GEN.h
+D:\Galaga\FACADE_ES\Intermediate\Build\Win64\UE4Editor\Inc\FACADE_ES\P_FM_FABRICA_GEN.generated.h
+D:\Galaga\FACADE_ES\Intermediate\Build\Win64\UE4Editor\Inc\FACADE_ES\P_FM_FABRICA_NAVES.generated.h
+D:\Galaga\FACADE_ES\Source\FACADE_ES\P_FM_OBSTACLES.h
+D:\Galaga\FACADE_ES\Source\FACADE_ES\P_FM_OBSTRUCTIONS.h
+D:\Galaga\FACADE_ES\Intermediate\Build\Win64\UE4Editor\Inc\FACADE_ES\P_FM_OBSTRUCTIONS.generated.h
+D:\Galaga\FACADE_ES\Intermediate\Build\Win64\UE4Editor\Inc\FACADE_ES\P_FM_OBSTACLES.generated.h
+D:\Galaga\FACADE_ES\Intermediate\Build\Win64\UE4Editor\Inc\FACADE_ES\FA_LEVEL_DIFICULT_HARD.generated.h

@@ -21,9 +21,6 @@ public:
 	virtual void Tick(float DeltaTime) override;
 
 
-protected:
-	UPROPERTY(VisibleAnywhere, Category = "Facade Enemy")
-	class AENEMY_FACADE* Facade;
 
 };
 

@@ -1,0 +1,17 @@
+D:\Galaga\FACADE_ES\Intermediate\Build\Win64\UE4Editor\Development\FACADE_ES\Definitions.FACADE_ES.h
+D:\Galaga\FACADE_ES\Source\FACADE_ES\P_FM_FABRICA_NAVES.h
+D:\Galaga\FACADE_ES\Source\FACADE_ES\P_FM_FABRICA_GEN.h
+D:\Galaga\FACADE_ES\Source\FACADE_ES\NaveEnemiga.h
+D:\Galaga\FACADE_ES\Intermediate\Build\Win64\UE4Editor\Inc\FACADE_ES\NaveEnemiga.generated.h
+D:\Galaga\FACADE_ES\Intermediate\Build\Win64\UE4Editor\Inc\FACADE_ES\P_FM_FABRICA_GEN.generated.h
+D:\Galaga\FACADE_ES\Intermediate\Build\Win64\UE4Editor\Inc\FACADE_ES\P_FM_FABRICA_NAVES.generated.h
+D:\Galaga\FACADE_ES\Source\FACADE_ES\NaveEnemiga_Basic.h
+D:\Galaga\FACADE_ES\Intermediate\Build\Win64\UE4Editor\Inc\FACADE_ES\NaveEnemiga_Basic.generated.h
+D:\Galaga\FACADE_ES\Source\FACADE_ES\NavePachecol.h
+D:\Galaga\FACADE_ES\Intermediate\Build\Win64\UE4Editor\Inc\FACADE_ES\NavePachecol.generated.h
+D:\Galaga\FACADE_ES\Source\FACADE_ES\NavesDelSabio.h
+D:\Galaga\FACADE_ES\Intermediate\Build\Win64\UE4Editor\Inc\FACADE_ES\NavesDelSabio.generated.h
+D:\Galaga\FACADE_ES\Source\FACADE_ES\NavesEjemplares.h
+D:\Galaga\FACADE_ES\Intermediate\Build\Win64\UE4Editor\Inc\FACADE_ES\NavesEjemplares.generated.h
+D:\Galaga\FACADE_ES\Source\FACADE_ES\NavesExtradimensionales.h
+D:\Galaga\FACADE_ES\Intermediate\Build\Win64\UE4Editor\Inc\FACADE_ES\NavesExtradimensionales.generated.h

@@ -1,0 +1,13 @@
+D:\Galaga\FACADE_ES\Intermediate\Build\Win64\UE4Editor\Development\FACADE_ES\Definitions.FACADE_ES.h
+D:\Galaga\FACADE_ES\Source\FACADE_ES\P_FM_OBSTACLES.h
+D:\Galaga\FACADE_ES\Source\FACADE_ES\P_FM_OBSTRUCTIONS.h
+D:\Galaga\FACADE_ES\Source\FACADE_ES\GENERAL_OBSTACLE.h
+D:\Galaga\FACADE_ES\Intermediate\Build\Win64\UE4Editor\Inc\FACADE_ES\GENERAL_OBSTACLE.generated.h
+D:\Galaga\FACADE_ES\Intermediate\Build\Win64\UE4Editor\Inc\FACADE_ES\P_FM_OBSTRUCTIONS.generated.h
+D:\Galaga\FACADE_ES\Intermediate\Build\Win64\UE4Editor\Inc\FACADE_ES\P_FM_OBSTACLES.generated.h
+D:\Galaga\FACADE_ES\Source\FACADE_ES\SATELITE_ABANDONADO.h
+D:\Galaga\FACADE_ES\Intermediate\Build\Win64\UE4Editor\Inc\FACADE_ES\SATELITE_ABANDONADO.generated.h
+D:\Galaga\FACADE_ES\Source\FACADE_ES\COMETA_LINEAL.h
+D:\Galaga\FACADE_ES\Intermediate\Build\Win64\UE4Editor\Inc\FACADE_ES\COMETA_LINEAL.generated.h
+D:\Galaga\FACADE_ES\Source\FACADE_ES\CAJAS_ABANDONADAS.h
+D:\Galaga\FACADE_ES\Intermediate\Build\Win64\UE4Editor\Inc\FACADE_ES\CAJAS_ABANDONADAS.generated.h

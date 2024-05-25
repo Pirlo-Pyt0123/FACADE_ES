@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\FACADE_ES.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{E1241E31-10C5-42D5-8991-9171F4AF6150}</UniqueIdentifier>
+      <UniqueIdentifier>{45E1DE31-53C5-45AF-ACC3-0700B2484310}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\FACADE_ES.Target.cs">
       <Filter>Source</Filter>
@@ -13,9 +13,8 @@
     </None>
     <None Include="..\..\.gitattributes" />
     <None Include="..\..\.gitignore" />
-    <None Include="..\..\Source.rar" />
     <Filter Include="Config">
-      <UniqueIdentifier>{6119F28E-F305-48E4-ABFC-47482B4D967B}</UniqueIdentifier>
+      <UniqueIdentifier>{0BAF4391-E003-41E1-BFFD-668D86EC5A58}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -33,12 +32,30 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\FACADE_ES">
-      <UniqueIdentifier>{187172C9-505C-406F-98BE-EF6DEB39F34E}</UniqueIdentifier>
+      <UniqueIdentifier>{864B4A50-753D-4EFF-8DED-EE800D5DCF56}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\FACADE_ES\ALIEN.cpp">
       <Filter>Source\FACADE_ES</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\FACADE_ES\ALIEN.h">
+      <Filter>Source\FACADE_ES</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\FACADE_ES\CAJAS_ABANDONADAS.cpp">
+      <Filter>Source\FACADE_ES</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FACADE_ES\CAJAS_ABANDONADAS.h">
+      <Filter>Source\FACADE_ES</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\FACADE_ES\COMETA_LINEAL.cpp">
+      <Filter>Source\FACADE_ES</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FACADE_ES\COMETA_LINEAL.h">
+      <Filter>Source\FACADE_ES</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\FACADE_ES\DIFICULTY_MENU.cpp">
+      <Filter>Source\FACADE_ES</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FACADE_ES\DIFICULTY_MENU.h">
       <Filter>Source\FACADE_ES</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\FACADE_ES\ENEMY_FACADE.cpp">
@@ -86,6 +103,60 @@
     <ClInclude Include="..\..\Source\FACADE_ES\FACADE_UNITY.h">
       <Filter>Source\FACADE_ES</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\FACADE_ES\FA_DIFICULT.cpp">
+      <Filter>Source\FACADE_ES</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FACADE_ES\FA_DIFICULT.h">
+      <Filter>Source\FACADE_ES</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\FACADE_ES\FA_LEVEL_DIFICULT.cpp">
+      <Filter>Source\FACADE_ES</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FACADE_ES\FA_LEVEL_DIFICULT.h">
+      <Filter>Source\FACADE_ES</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\FACADE_ES\FA_LEVEL_DIFICULT_EASY.cpp">
+      <Filter>Source\FACADE_ES</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FACADE_ES\FA_LEVEL_DIFICULT_EASY.h">
+      <Filter>Source\FACADE_ES</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\FACADE_ES\FA_LEVEL_DIFICULT_HARD.cpp">
+      <Filter>Source\FACADE_ES</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FACADE_ES\FA_LEVEL_DIFICULT_HARD.h">
+      <Filter>Source\FACADE_ES</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\FACADE_ES\FA_LEVEL_DIFICULT_NORMAL.cpp">
+      <Filter>Source\FACADE_ES</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FACADE_ES\FA_LEVEL_DIFICULT_NORMAL.h">
+      <Filter>Source\FACADE_ES</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\FACADE_ES\GENERAL_OBSTACLE.cpp">
+      <Filter>Source\FACADE_ES</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FACADE_ES\GENERAL_OBSTACLE.h">
+      <Filter>Source\FACADE_ES</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\FACADE_ES\MainMenuWidget.cpp">
+      <Filter>Source\FACADE_ES</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FACADE_ES\MainMenuWidget.h">
+      <Filter>Source\FACADE_ES</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\FACADE_ES\MenuPlayerController.cpp">
+      <Filter>Source\FACADE_ES</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FACADE_ES\MenuPlayerController.h">
+      <Filter>Source\FACADE_ES</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\FACADE_ES\MENU_HUD.cpp">
+      <Filter>Source\FACADE_ES</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FACADE_ES\MENU_HUD.h">
+      <Filter>Source\FACADE_ES</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\FACADE_ES\MOVE_EASY.cpp">
       <Filter>Source\FACADE_ES</Filter>
     </ClCompile>
@@ -108,6 +179,66 @@
       <Filter>Source\FACADE_ES</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\FACADE_ES\NaveEnemiga_Nodriza.h">
+      <Filter>Source\FACADE_ES</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\FACADE_ES\NavePachecol.cpp">
+      <Filter>Source\FACADE_ES</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FACADE_ES\NavePachecol.h">
+      <Filter>Source\FACADE_ES</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\FACADE_ES\NavesDelSabio.cpp">
+      <Filter>Source\FACADE_ES</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FACADE_ES\NavesDelSabio.h">
+      <Filter>Source\FACADE_ES</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\FACADE_ES\NavesEjemplares.cpp">
+      <Filter>Source\FACADE_ES</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FACADE_ES\NavesEjemplares.h">
+      <Filter>Source\FACADE_ES</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\FACADE_ES\NavesExtradimensionales.cpp">
+      <Filter>Source\FACADE_ES</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FACADE_ES\NavesExtradimensionales.h">
+      <Filter>Source\FACADE_ES</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\FACADE_ES\NEWPROYECTILE.cpp">
+      <Filter>Source\FACADE_ES</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FACADE_ES\NEWPROYECTILE.h">
+      <Filter>Source\FACADE_ES</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\FACADE_ES\P_FM_FABRICA_GEN.cpp">
+      <Filter>Source\FACADE_ES</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FACADE_ES\P_FM_FABRICA_GEN.h">
+      <Filter>Source\FACADE_ES</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\FACADE_ES\P_FM_FABRICA_NAVES.cpp">
+      <Filter>Source\FACADE_ES</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FACADE_ES\P_FM_FABRICA_NAVES.h">
+      <Filter>Source\FACADE_ES</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\FACADE_ES\P_FM_OBSTACLES.cpp">
+      <Filter>Source\FACADE_ES</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FACADE_ES\P_FM_OBSTACLES.h">
+      <Filter>Source\FACADE_ES</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\FACADE_ES\P_FM_OBSTRUCTIONS.cpp">
+      <Filter>Source\FACADE_ES</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FACADE_ES\P_FM_OBSTRUCTIONS.h">
+      <Filter>Source\FACADE_ES</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\FACADE_ES\SATELITE_ABANDONADO.cpp">
+      <Filter>Source\FACADE_ES</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\FACADE_ES\SATELITE_ABANDONADO.h">
       <Filter>Source\FACADE_ES</Filter>
     </ClInclude>
   </ItemGroup>

@@ -1,0 +1,5 @@
+D:\Galaga\FACADE_ES\Intermediate\Build\Win64\UE4Editor\Development\FACADE_ES\Definitions.FACADE_ES.h
+D:\juegazo\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
+D:\juegazo\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
+D:\Galaga\FACADE_ES\Source\FACADE_ES/GENERAL_OBSTACLE.h
+D:\Galaga\FACADE_ES\Intermediate\Build\Win64\UE4Editor\Inc\FACADE_ES\GENERAL_OBSTACLE.generated.h

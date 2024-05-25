@@ -25,6 +25,9 @@ class AFACADE_ESProjectile : public AActor
 public:
 	AFACADE_ESProjectile();
 
+
+
+
 	/** Function to handle the projectile hitting something */
 	UFUNCTION()
 	void OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit);
@@ -33,5 +36,19 @@ public:
 	FORCEINLINE UStaticMeshComponent* GetProjectileMesh() const { return ProjectileMesh; }
 	/** Returns ProjectileMovement subobject **/
 	FORCEINLINE UProjectileMovementComponent* GetProjectileMovement() const { return ProjectileMovement; }
+	float Danio_D_B;
+
+	//Danio del proyectil 
+	float DanioProvocado;
+
+
+	//void Set_Danio(float Danio);
+
+
+	//virtual void NotifyActorBeginOverlap(AActor* OtherActor);
+
+	//virtual void DestroyPROYECTIL();
+
+
 };
 

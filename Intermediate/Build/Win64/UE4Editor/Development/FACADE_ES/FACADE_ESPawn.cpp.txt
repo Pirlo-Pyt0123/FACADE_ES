@@ -6,6 +6,10 @@ D:\juegazo\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Characte
 D:\juegazo\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/RootMotionSource.h
 D:\juegazo\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\RootMotionSource.generated.h
 D:\juegazo\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Character.generated.h
+D:\juegazo\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/PlayerInput.h
+D:\juegazo\UE_4.27\Engine\Source\Runtime\Engine\Public\GestureRecognizer.h
+D:\juegazo\UE_4.27\Engine\Source\Runtime\Engine\Public\KeyState.h
+D:\juegazo\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\PlayerInput.generated.h
 D:\Galaga\FACADE_ES\Intermediate\Build\Win64\UE4Editor\Inc\FACADE_ES\FACADE_ESPawn.generated.h
 D:\Galaga\FACADE_ES\Source\FACADE_ES\FACADE_ESProjectile.h
 D:\Galaga\FACADE_ES\Intermediate\Build\Win64\UE4Editor\Inc\FACADE_ES\FACADE_ESProjectile.generated.h

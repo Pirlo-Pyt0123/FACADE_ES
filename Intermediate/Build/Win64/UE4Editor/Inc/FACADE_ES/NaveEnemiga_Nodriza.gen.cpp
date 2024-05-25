@@ -71,7 +71,7 @@ void EmptyLinkFunctionForGeneratedCodeNaveEnemiga_Nodriza() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ANaveEnemiga_Nodriza, 1050934288);
+	IMPLEMENT_CLASS(ANaveEnemiga_Nodriza, 2904520889);
 	template<> FACADE_ES_API UClass* StaticClass<ANaveEnemiga_Nodriza>()
 	{
 		return ANaveEnemiga_Nodriza::StaticClass();
